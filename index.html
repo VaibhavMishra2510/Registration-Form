@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="Registration">
+  <h2>Student Registration Form</h2>
+  <form>
+    <label for="fname"><br>First Name:</label>
+    <input type="text" placeholder="Enter First Name" required><br>
+    <label for="lname"><br>Last Name:</label>
+    <input type="text" placeholder="Enter Last Name" required><br>
+    <label for="email"><br>Email:</label>
+    <input type="email" placeholder="Enter Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required><br>
+    <label for="Mobile"><br>Mobile:</label>
+    <input type="tel" id="phone" name="phone" placeholder="0-9" pattern="[0-9]{10}" required><br>
+    <label for="Gender"><br>Gender:</label>
+    <input type="radio" id="Male" name="Gender" value="Male">
+    <label for="Male">Male</label>
+    <input type="radio" id="Female" name="Gender" value="Female">
+        <label for="Female">Female</label><br>
+        <label for="Date of birth"><br>Date of birth:</label>
+        <input type="date" id="Date of birth" name="Date of birth"><br>
+        <label for="Adress"><br>Adress</label>
+        <TExtarea placeholder="Enter Address"   id="Address" name="Address" rows="4" cols="50"></TExtarea><br>
+        <label for="City"><br>City:</label>
+        <input type="text"placeholder="Enter City" id="City" name="City"><br>
+        <label for="Pin"><br>Area pin:</label>
+        <input type="text" placeholder="Enter Area Pin"   id="Pin" name="Pin" pattern="[0-9]{6}"><br>
+        <label for="State"><br>State:</label>
+        <input type="text"placeholder="Enter State" id="State" name="State"><br>
+        <label for="Qualification"><br>Qualification:</label>
+         <select id="Qualification" name="Qualification" required>
+            <option value="">Select your Qualification</option>
+            <option value="high-school">High School</option>
+            <option value="associate">Associate Degree</option>
+            <option value="bachelor">Bachelor's Degree</option>
+            <option value="master">Master's Degree</option>
+            <option value="doctorate">Doctorate</option>
+        </select><br><br>
+        <label for="Specialization">Specialization:</label>
+        <input type="checkbox" name="Computer Science" id="Specialization">
+        <label for="Computer Science">Computer Science</label><br>
+        <input type="checkbox" name="Information Technology" id="Specialization">
+        <label for="Computer Science">Information Technology</label><br>
+         <input type="checkbox" name="Computer Architecture" id="Specialization">
+        <label for="Computer Science">Computer Architecture</label><br>
+        <input type="checkbox" name="Tele Communication" id="Specialization">
+        <label for="Computer Science">Tele Communication</label><br>
+        <label for="Password"><br>Password:</label>
+        <input type="password" placeholder="Enter Password"  name="Password" id="Password"><br>
+         <br><div class="Submit">
+          <input type="Submit" id="Submit" class="Submitbtn">
+         </div>
+  </form>
+  </div>
+</body>
+</html>
